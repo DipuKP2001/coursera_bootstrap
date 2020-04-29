@@ -29,3 +29,7 @@ header {
 .footer {
     background-color: #a8d;
 }
+
+.badge-danger {
+    background-color: #dc3545;
+}
