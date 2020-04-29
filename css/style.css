@@ -33,3 +33,7 @@ header {
 .badge-danger {
     background-color: #dc3545;
 }
+
+.card h2 {
+    background-color: #726866 !important;
+}
