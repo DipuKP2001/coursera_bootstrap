@@ -37,3 +37,7 @@ header {
 .card h2 {
     background-color: #726866 !important;
 }
+
+#reservation_btn {
+    color: black;
+}
