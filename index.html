@@ -27,9 +27,47 @@
                     <li><a class="nav-link" href="./index.html"><span class="fa fa-list fa-lg">&nbsp;</span>Menu</a></li>
                     <li><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg">&nbsp;</span>Contact</a></li>
                 </ul>
+                <span class="navbar-text float-right">
+                    <a data-toggle="modal" data-target="#loginModal">
+                    <span class="fa fa-sign-in"> Login</span>
+                </a>
+                </span>
             </div>
         </div>
     </nav>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <label class="col-form-label" for="email">Email Address</label>
+                                <input type="email" id="email" class="form-control form-control-sm mr-1" placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="col-form-label" for="passwd">Password</label>
+                                <input type="password" id="passwd" class="form-control form-control-sm mr-1" placeholder="Enter Password">
+                            </div>
+                            <div class="form-check">
+                                <input id="remember" class="form-checkinput" type="checkbox">
+                                <label class="form-check-label" for="remember">Remember Me</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" data-dismiss="modal" class="btn btn-sm btn-secondary ml-auto">Cancel</button>
+                            <button type="button" class="btn btn-sm btn-primary ml-2">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <header class="jumbotron p-1">
         <div class="container text-white">
@@ -44,7 +82,7 @@
                     </div>
                     <br>
                     <div class="col-6 col-sm-5 mt-5 justify-content-center">
-                        <a id="reservation_btn" class="btn btn-default btn-block btn-warning" role="button" href="#reservation">Reserve Table</a>
+                        <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="tooltip" data-html="true" title="Or Call us at  <br><strong>+852 12345678</strong>" data-placement="bottom" href="#reservation">Reserve Table</a>
                     </div>
                 </div>
             </div>
@@ -53,17 +91,17 @@
 
     <br>
 
-    <div class="container ">
-        <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-3 order-sm-last col-md-2">
+    <div class=" container ">
+        <div class="row row-content align-items-center ">
+            <div class="col-12 col-sm-3 order-sm-last col-md-2 ">
                 <h2>Our Lipsmacking Culinary Creations</h2>
             </div>
-            <div class="col col-sm-8">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="Uthappizza">
-                    <div class="media-body">
-                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span>&nbsp;<span class="badge badge-pill badge-secondary">$4.99</span></h2>
-                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+            <div class="col col-sm-8 ">
+                <div class="media ">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center " src="img/uthappizza.png " alt="Uthappizza ">
+                    <div class="media-body ">
+                        <h2 class="mt-0 ">Uthappizza <span class="badge badge-danger ">HOT</span>&nbsp;<span class="badge badge-pill badge-secondary ">$4.99</span></h2>
+                        <p class="d-none d-sm-block ">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                     </div>
                 </div>
             </div>
@@ -72,16 +110,16 @@
         <hr>
         <br>
         <div class="row ">
-            <div class="col-12 col-sm-4 col-md-3">
+            <div class="col-12 col-sm-4 col-md-3 ">
                 <h2>This Month's Promotions</h2>
             </div>
-            <div class="col-12 col-sm-8">
-                <div class="media offset-sm-2">
-                    <div class="media-body mr-3">
-                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
-                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+            <div class="col-12 col-sm-8 ">
+                <div class="media offset-sm-2 ">
+                    <div class="media-body mr-3 ">
+                        <h2 class="mt-0 ">Weekend Grand Buffet <span class="badge badge-danger ">NEW</span></h2>
+                        <p class="d-none d-sm-block ">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
                     </div>
-                    <img class="d-flex img-thumbnail align-self-center" src="img/buffet.png" alt="buffet">
+                    <img class="d-flex img-thumbnail align-self-center " src="img/buffet.png " alt="buffet ">
                 </div>
             </div>
         </div>
@@ -89,16 +127,16 @@
         <hr>
         <br>
         <div class="row ">
-            <div class="col-12 col-sm-4 order-sm-last col-md-3">
+            <div class="col-12 col-sm-4 order-sm-last col-md-3 ">
                 <h2>Meet our Culinary Specialists</h2>
             </div>
-            <div class="col-12 col-sm-8 order-sm-first">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/alberto.png" alt="Alberto">
-                    <div class="media-body">
+            <div class="col-12 col-sm-8 order-sm-first ">
+                <div class="media ">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center " src="img/alberto.png " alt="Alberto ">
+                    <div class="media-body ">
                         <h2>Alberto Somayya</h2>
                         <h4>Executive Chef</h4>
-                        <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                        <p class="d-none d-sm-block ">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
                     </div>
                 </div>
             </div>
@@ -108,35 +146,53 @@
     <br>
     <hr>
     <br>
-    <div class="row">
-        <div class="col-12 col-sm-8 offset-sm-2">
-            <div id="reservation" class="card align-self-center">
-                <h2 class="card-title bg-primary text-white m-0 p-3">Reserve a Table</h2>
-                <div class="card-body">
+    <div class="row ">
+        <div class="col-12 col-sm-8 offset-sm-2 ">
+            <div id="reservation" class="card align-self-center ">
+                <h2 class="card-title bg-primary text-white m-0 p-3 ">Reserve a Table</h2>
+                <div class="card-body ">
                     <form>
-                        <div class="form-group row">
-                            <label class="col-form-label ml-5">Number of Guests</label>
-                            <div class="col-sm-8">
-                                <label class="radio-inline">1<input type="radio"></label>
-                                <label class="radio-inline">2<input type="radio"></label>
-                                <label class="radio-inline">3<input type="radio"></label>
-                                <label class="radio-inline">4<input type="radio"></label>
-                                <label class="radio-inline">5<input type="radio"></label>
-                                <label class="radio-inline">6<input type="radio"></label>
+                        <div class="form-group row ">
+                            <label class="col-form-label ml-5 ">Number of Guests</label>
+                            <div class="col-6 offset-1 pt-2">
+                                <div class="form-check-inline">
+                                    <input type="radio" class="form-check-input" id="opt1" value="option1" name="inlineRadioOptions">
+                                    <label for="opt1" class="form-check-label">1</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="radio" class="form-check-input" id="opt2" value="option1" name="inlineRadioOptions">
+                                    <label for="opt2" class="form-check-label">2</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="radio" class="form-check-input" id="opt3" value="option1" name="inlineRadioOptions">
+                                    <label for="opt3" class="form-check-label">3</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="radio" class="form-check-input" id="opt4" value="option1" name="inlineRadioOptions">
+                                    <label for="opt4" class="form-check-label">4</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="radio" class="form-check-input" id="opt5" value="option1" name="inlineRadioOptions">
+                                    <label for="opt5" class="form-check-label">5</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="radio" class="form-check-input" id="opt6" value="option1" name="inlineRadioOptions">
+                                    <label for="opt6" class="form-check-label">6</label>
+                                </div>
                             </div>
                         </div>
-                        <div class="form-group row">
-                            <label class="col-for-label ml-5 mr-5">Date and Time</label>
-                            <div class="col-10 col-sm-3">
-                                <input class="form-control" type="text" id="date_time" name="date" placeholder="Date">
+                        <div class="form-group row ">
+                            <label class="col-form-label ml-5 mr-5 ">Date and Time</label>
+                            <div class="col-10 col-sm-3 ">
+                                <input class="form-control " type="text " id="date_time " name="date " placeholder="Date ">
                             </div>
-                            <div class="col-10 col-sm-3">
-                                <input class="form-control" type="text" id="time" name="time" placeholder="Time">
+                            <div class="col-10 col-sm-3 ">
+                                <input class="form-control " type="text " id="time " name="time " placeholder="Time ">
                             </div>
                         </div>
-                        <div class="form-group row">
-                            <div class="offset-1 offset-sm-2 col-sm-4">
-                                <button type="submit" class="btn btn-primary">Reserve</button>
+                        <div class="form-group row ">
+                            <div class="offset-1 offset-sm-2 col-sm-4 ">
+                                <button type="submit " class="btn btn-primary ">Reserve</button>
                             </div>
                         </div>
                     </form>
@@ -153,10 +209,10 @@
                 <div class="col-4 offset-1 col-sm-2 ">
                     <h5>Links</h5>
                     <ul class="list-unstyled ">
-                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./index.html ">Home</a></li>
                         <li><a href="./aboutus.html ">About</a></li>
                         <li><a href="# ">Menu</a></li>
-                        <li><a href="./contactus.html">Contact</a></li>
+                        <li><a href="./contactus.html ">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-7 col-sm-5 ">
@@ -165,19 +221,19 @@
 		              121, Clear Water Bay Road<br>
 		              Clear Water Bay, Kowloon<br>
                       HONG KONG<br>
-		              <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
-		              <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
-		              <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@food.net ">confusion@food.net</a>
+		              <i class="fa fa-phone fa-lg "></i>: +852 1234 5678<br>
+		              <i class="fa fa-fax fa-lg "></i>: +852 8765 4321<br>
+		              <i class="fa fa-envelope fa-lg "></i>: <a href="mailto:confusion@food.net ">confusion@food.net</a>
 		           </address>
                 </div>
                 <div class="col-12 col-sm-4 align-self-center ">
                     <div>
-                        <a class="btn btn-social-icon btn-google" href="http://google.com/+ "><i class="fa fa-google-plus"></i></a>
-                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
-                        <a class="btn btn-social-icon btn-linkedin" href=" http://www.linkedin.com/in/ "><i class="fa fa-linkedin"></i></a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/ "><i class="fa fa-twitter"></i></a>
-                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/ "><i class="fa fa-youtube"></i></a>
-                        <a class="btn btn-social-icon" href="mailto: "><i class="fa fa-envelope-o"></i></a>
+                        <a class="btn btn-social-icon btn-google " href="http://google.com/+ "><i class="fa fa-google-plus "></i></a>
+                        <a class="btn btn-social-icon btn-facebook " href="http://www.facebook.com/profile.php?id="><i class=" fa fa-facebook "></i></a>
+                        <a class="btn btn-social-icon btn-linkedin " href=" http://www.linkedin.com/in/ "><i class="fa fa-linkedin "></i></a>
+                        <a class="btn btn-social-icon btn-twitter " href="http://twitter.com/ "><i class="fa fa-twitter "></i></a>
+                        <a class="btn btn-social-icon btn-google " href="http://youtube.com/ "><i class="fa fa-youtube "></i></a>
+                        <a class="btn btn-social-icon " href="mailto: "><i class="fa fa-envelope-o "></i></a>
                     </div>
                 </div>
             </div>
@@ -192,7 +248,14 @@
     <script src="js/jquery-1.11.3.min.js "></script>
     <script src="js/bootstrap.min.js "></script>
     <script src="js/script.js "></script>
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 
 </body>
+
+</html>
 
 </html>
