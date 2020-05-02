@@ -207,14 +207,9 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
-                    <div class="btn-group" id="carouselButton">
-                        <button id="carousel-pause" class="btn btn-light">
-                            <span class="fa fa-pause"></span>
-                        </button>
-                        <button id="carousel-play" class="btn btn-light">
-                            <span class="fa fa-play"></span>
-                        </button>
-                    </div>
+                    <button id="carouselButton" class="btn btn-sm btn-danger">
+                        <span id="carousel-button-icon" class="fa fa-pause"></span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -321,14 +316,16 @@
     <script src="js/script.js "></script>
     <script>
         $(document).ready(function() {
-            $("#carouselExampleIndicators").carousel({
-                interval: 2000
-            });
-            $("#carousel-pause").click(function() {
-                $("#carouselExampleIndicators").carousel('pause');
-            });
-            $("#carousel-play").click(function() {
-                $("#carouselExampleIndicators").carousel('cycle');
+            $('#carouselButton').click(function() {
+                if ($('#carouselButton').children("span").hasClass("fa-pause")) {
+                    $('#carouselExampleIndicators').carousel('pause');
+                    $('#carouselButton').children("span").removeClass("fa-pause");
+                    $('#carouselButton').children("span").addClass("fa-play");
+                } else {
+                    $('#carouselExampleIndicators').carousel('cycle');
+                    $('#carouselButton').children("span").removeClass("fa-play");
+                    $('#carouselButton').children("span").addClass("fa-pause");
+                }
             });
         });
     </script>
