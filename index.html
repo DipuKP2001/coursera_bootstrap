@@ -71,6 +71,79 @@
         </div>
     </div>
 
+    <div id="reservation" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Reserve a Table</h2>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="inlineRadioOptions" class="col-form-label ml-5">Number of Guests</label>
+                            <div class="col-6 offset-1 pt-2">
+                                <div class="form-check-inline">
+                                    <input type="radio" class="form-check-input" id="opt1" value="option1" name="inlineRadioOptions">
+                                    <label for="opt1" class="form-check-label">1</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="radio" class="form-check-input" id="opt2" value="option1" name="inlineRadioOptions">
+                                    <label for="opt2" class="form-check-label">2</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="radio" class="form-check-input" id="opt3" value="option1" name="inlineRadioOptions">
+                                    <label for="opt3" class="form-check-label ">3</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="radio" class="form-check-input" id="opt4" value="option1" name="inlineRadioOptions">
+                                    <label for="opt4" class="form-check-label">4</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="radio" class="form-check-input" id="opt5" value="option1" name="inlineRadioOptions">
+                                    <label for="opt5" class="form-check-label">5</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="radio" class="form-check-input" id="opt6" value="option1" name="inlineRadioOptions">
+                                    <label for="opt6" class="form-check-label">6</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="buttons" class="col-form-label ml-5">Section</label>
+                            <div class="btn-group btn-group-toggle col-6 offset-2" data-toggle="buttons">
+                                <label class="btn btn-outline-success active">
+                                  <input type="radio" name="buttons" id="noSmoke" autocomplete="off">Non-smoking
+                                </label>
+                                <label class="btn btn-danger">
+                                  <input type="radio" name="buttons" id="smoke" autocomplete="off">Smoking
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-form-label ml-5">Date and Time</label>
+                            <div class="col-7 offset-1">
+                                <div class="col col-sm-5 pl-4">
+                                    <input class="form-control" type="text" id="date_time" name="date" placeholder="Date">
+                                </div>
+                                <div class="col col-sm-5">
+                                    <input class="form-control" type="text" id="time" name="time" placeholder="Time">
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group row">
+                            <div class="offset-1 offset-sm-2 col-sm-4">
+                                <button type="button" data-dismiss="modal" class="btn btn-sm btn-secondary ml-auto">Cancel</button>
+                                <button type="button" class="btn btn-sm btn-primary ml-1">Reserve</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <header class="jumbotron p-1">
         <div class="container text-white">
             <div class="row row-header">
@@ -84,7 +157,7 @@
                     </div>
                     <br>
                     <div class="col-6 col-sm-5 mt-5 justify-content-center">
-                        <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="tooltip" data-html="true" title="Or Call us at  <br><strong>+852 12345678</strong>" data-placement="bottom" href="#reservation">Reserve Table</a>
+                        <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="modal" data-target="#reservation">Reserve Table</a>
                     </div>
                 </div>
             </div>
@@ -137,6 +210,8 @@
                 </div>
             </div>
         </div>
+        <br>
+        <br>
         <div class="row row-content align-items-center ">
             <div class="col-12 col-sm-3 order-sm-last col-md-2 ">
                 <h2>Our Lipsmacking Culinary Creations</h2>
@@ -191,7 +266,7 @@
     <br>
     <hr>
     <br>
-    <div class="row ">
+    <!-- <div class="row ">
         <div class="col-12 col-sm-8 offset-sm-2 ">
             <div id="reservation" class="card align-self-center">
                 <h2 class="card-title bg-primary text-white m-0 p-3">Reserve a Table</h2>
@@ -244,7 +319,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <br>
     <br>
 
