@@ -53,11 +53,11 @@ header {
     background: #512DA8;
 }
 
-.carousel-item {
+.carousel .carousel-item {
     height: 200px;
 }
 
-.carousel-item img {
+.carousel .carousel-item img {
     position: absolute;
     top: 0;
     left: 0;
@@ -69,4 +69,21 @@ header {
     bottom: 0;
     right: 0;
     z-index: 1;
+}
+
+.modal-header {
+    background-color: #9575CD;
+    color: floralwhite;
+}
+
+#cancelButton {
+    color: floralwhite;
+}
+
+.modal-body {
+    background-color: #D1C4E9;
+}
+
+#loginCancel {
+    color: floralwhite;
 }
